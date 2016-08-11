@@ -1,4 +1,5 @@
 'use strict'
+var gulp = require('gulp');
 
 var taskFactory = function(fn, metadata) {
     var taskWrapper = function(done) {
