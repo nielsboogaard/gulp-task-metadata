@@ -42,14 +42,14 @@ gulp.task('task2', function(done, conf) {
 
 ## API
 
-gulp-task-metadata is used the same way as the default `series` and `parallel` methods from Undertaker which Gulp uses, except that de first argument holds the metadata which should be provided to the following tasks.
+gulp-task-metadata is used the same way as the default `series` and `parallel` methods from Undertaker which Gulp uses, except that the first argument holds the metadata which should be provided to the following tasks.
 
 ### `series(metadata, taskName || fn...)`
 
 #### metadata
 Type: `Array`
 
-The metadata to provide to all the given tasks
+The metadata to provide to all the given tasks.
 
 #### taskName || fn...
 Type: `String` or `Function`
@@ -63,7 +63,7 @@ When the returned function is executed, the tasks or functions will be executed 
 #### metadata
 Type: `Array`
 
-The metadata to provide to all the given tasks
+The metadata to provide to all the given tasks.
 
 #### taskName || fn...
 Type: `String` or `Function`
