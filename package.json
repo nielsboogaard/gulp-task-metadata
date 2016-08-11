@@ -1,0 +1,22 @@
+{
+  "name": "gulp-task-metadata",
+  "version": "1.0.0",
+  "description": "This plugin provides metadata to your gulp tasks. This way you can hand over specific configuration to all tasks, which enables you to re-use and run those tasks in parallel with different sets of configuration for each task instance.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nielsboogaard/gulp-task-metadata.git"
+  },
+  "keywords": [
+    "gulp-friendly",
+    "task",
+    "metadata",
+    "composition"
+  ],
+  "author": "Niels Boogaard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nielsboogaard/gulp-task-metadata/issues"
+  },
+  "homepage": "https://github.com/nielsboogaard/gulp-task-metadata#readme"
+}
