@@ -22,12 +22,12 @@ gulpTaskMetadata.parallel(['metadata'], ...); //instead of gulp.parallel(...)
 
 Basic example:
 ```javascript
-var gulpTaskMetadata = require('gulp-task-metadata');
+var gulp = require('gulp');
+    gulpTaskMetadata = require('gulp-task-metadata'),
+    config1 = [{ 'foo': 'bar' }],
+    config2 = ['otherConf'];
 
-gulp.task('runTasks', function(){
-    gulpTaskMetadata.series([{ foo: bar }], 'task1', 'task2')();
-    gulpTaskMetadata.parallel(['otherConf'], 'task1')();
-});
+gulp.task('default', gulpTaskMetadata.series(config1, 'task1', 'task2', gulpTaskMetadata.parallel(config2, 'task1')));
 
 gulp.task('task1', function(done, conf) {
     console.log('task1 conf:', conf);
